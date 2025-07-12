@@ -7,46 +7,6 @@ Load any RLE‐encoded Life pattern (e.g. Greyship, Dart, OTCA Metapixel) and wa
 
 ## 📸 Demo
 
-![Game of Life running in terminal](./media/life-demo.gif)  
-*Replace this GIF with your own export once you’ve generated it.*
-
----
-
-## 🚀 Features
-
-- **Custom framebuffer**: draw individual pixels or blocks  
-- **RLE loader**: drop in any `.rle` pattern and place it anywhere on the grid  
-- **Random start**: initialize with a randomized population  
-- **Adjustable cell size**: trade off resolution vs. speed  
-- **Modular design**: easily extend with UI controls, zoom, pan, etc.
-
----
-
-## 📦 Requirements
-
-- Rust (1.60+)
-- [raylib-rs](https://crates.io/crates/raylib) (`raylib` FFI)
-- [rand](https://crates.io/crates/rand) (for random seeding)
-- A C toolchain with `raylib` installed on your system (e.g. via `apt`, `brew`, or `vcpkg`)
-
----
-
-## 🔧 Installation
-
-1. **Clone** the repo:
-   ```bash
-   git clone https://github.com/yourusername/game-of-life-rust.git
-   cd game-of-life-rust
-
-# Conway’s Game of Life (Rust + Raylib)
-
-A simple Rust implementation of Conway’s Game of Life, rendered pixel‐by‐pixel via a custom `Framebuffer` built on [raylib-rs](https://crates.io/crates/raylib).  
-Load any RLE‐encoded Life pattern (e.g. Greyship, Dart, OTCA Metapixel) and watch “Life within Life” in action.
-
----
-
-## 📸 Demo
-
 ![Game of Life running in terminal](showcase.gif)  
 
 ---
@@ -79,21 +39,22 @@ Load any RLE‐encoded Life pattern (e.g. Greyship, Dart, OTCA Metapixel) and wa
    ```
 
 2.	Install system raylib
-	•	macOS (Homebrew):
-   ```bash
-    brew install raylib
-    ```
 
-	•	Ubuntu / Debian:
+•	macOS (Homebrew):
    ```bash
-    sudo apt-get update
-    sudo apt-get install libraylib-dev
-    ```
+   brew install raylib
+   ```
 
-	•	Windows: via vcpkg:
+•	Ubuntu / Debian:
    ```bash
-    vcpkg install raylib
-    ```
+   sudo apt-get update
+   sudo apt-get install libraylib-dev
+   ```
+
+•	Windows: via vcpkg:
+   ```bash
+   vcpkg install raylib
+   ```
 
 If necessary you may need to add CMake to compile Raylib, you run the above commands and change raylib for cmake.
 
@@ -101,7 +62,7 @@ If necessary you may need to add CMake to compile Raylib, you run the above comm
    ```bash
     cargo build --release
     cargo run --release
-    ```
+   ```
 ⸻
 
 ## 🎮 Usage
